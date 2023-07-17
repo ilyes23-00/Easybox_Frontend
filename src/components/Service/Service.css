@@ -1,0 +1,27 @@
+
+.services .service-span {
+    background-color: #f99e5828;
+}
+.services .service-span::before,
+.services .service-span::after{
+    content: '';
+    width: 16px ;
+    height: 2px;
+    top: 50%;
+    background-color: #F99D58;
+    position: absolute;
+    border-radius: 18px;
+}
+.services .service-span::after{
+      right: 5px; 
+}
+.services .service-span::before{
+      left: 5px; 
+}
+.card-services{
+    transition: 0.5s ease-in-out;
+}
+
+.card-services:hover{
+    transform: rotate(-10deg) skew(-10deg) scale(0.96);
+}

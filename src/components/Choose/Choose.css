@@ -1,0 +1,27 @@
+.choose-section .choose-span {
+    background-color: #f99e5828;
+}
+.choose-section .choose-span::before,
+.choose-section .choose-span::after{
+    content: '';
+    width: 16px ;
+    height: 2px;
+    top: 50%;
+    background-color: #F99D58;
+    position: absolute;
+    border-radius: 18px;
+}
+.choose-section .choose-span::after{
+      right: 5px; 
+}
+.choose-section .choose-span::before{
+      left: 5px; 
+}
+
+
+.choose-section .intro-video{
+   background:radial-gradient(circle, rgba(44,52,55,0.458420868347339) 21%, rgba(64,76,80,0.8841911764705882) 95%), url(../../assets/images/choose.jpg);
+    background-size: cover;
+    background-position: center;
+}
+

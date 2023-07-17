@@ -1,0 +1,146 @@
+.hero-section{
+     background:linear-gradient(75deg, rgba(44,52,55,1) 21%, rgba(64,76,80,0.5914740896358543) 75%), url(../../assets/images/banner.jpg);
+     background-size: cover;
+     background-position: center;
+
+}
+.hero-section .intro-text{
+     position: relative;
+     padding-left: 30px;
+}
+.hero-section .intro-text::before{
+     content: '';
+     width: 25px;
+     height: 3px;
+     border-radius: 18px;
+     background-color: #F99D58;
+     position: absolute;
+     left: 0;
+     top: 50%;
+    
+}
+.social{
+     position: absolute;
+     left: -108px;
+     top: 50%;
+     rotate: -90deg;
+     font-weight:200;
+     font-size: 16px;
+     color: #ccc;
+     letter-spacing: 1.3px;
+}
+
+
+.hero-section .icons-hero {
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
+  z-index: 1 !important;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* discover more button */
+.discover {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #F99D58;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background-color: #F99D58;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.discover:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #404c50;
+  z-index: -1;
+}
+
+.discover:hover, .discover:focus {
+  color: white;
+}
+
+.discover:hover:before, .discover:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.discover:active {
+  transform: scale(0.9);
+}
+
+/* how it work button */
+.button {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #F99D58;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  align-items: center;
+  border: 0;
+}
+
+.button:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px rgba(193,244,246,0);
+  }
+}
+
+

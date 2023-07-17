@@ -1,0 +1,24 @@
+.offers{
+    background: url('../../assets/images/solistionbg.png');
+    background-position: center;
+    background-size: cover;
+}
+.offers .offer-span{
+    background-color: #f99e5828;
+}
+.offers .offer-span::before,
+.offers .offer-span::after{
+    content: '';
+    width: 16px ;
+    height: 2px;
+    top: 50%;
+    background-color: #F99D58;
+    position: absolute;
+    border-radius: 18px;
+}
+.offers .offer-span::after{
+      right: 5px; 
+}
+.offers .offer-span::before{
+      left: 5px; 
+}
