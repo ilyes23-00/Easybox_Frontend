@@ -7,7 +7,7 @@ import "swiper/css";
 import "./Client.css";
 
 // import required modules
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 
 const Client = () => {
   const partners = [
@@ -75,8 +75,16 @@ const Client = () => {
           {partners.map((partner) => (
             <SwiperSlide key={partner.id}>
               <div>
-                <img src={partner.img} alt={partner.name} width={150} height={150} className="aspect-square" />
-                <h3 className="font-semibold tracking-wide mt-4 text-xl uppercase">{partner.name}</h3>
+                <img
+                  src={partner.img}
+                  alt={partner.name}
+                  width={150}
+                  height={150}
+                  className="aspect-square"
+                />
+                <h3 className="font-semibold tracking-wide mt-4 text-xl uppercase">
+                  {partner.name}
+                </h3>
               </div>
             </SwiperSlide>
           ))}

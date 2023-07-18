@@ -14,7 +14,7 @@ import "./styles.css";
 import Cards from "../Cards/Cards";
 
 // import required modules
-import { Autoplay  } from "swiper";
+import { Autoplay  } from "swiper/modules";
  // array for the list of services 
 const provides = [
   {
